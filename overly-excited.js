@@ -20,7 +20,7 @@ let sentence = ["The","walrus","danced","through","the","trees","in","the","ligh
     and output the words to the browser console.
 */
 
-function addExcitement (theWordArray) {
+function addExcitement (theWordArray, punct) {
 
     // Each time the for loop executes, you're going to add one more word to this string
     let buildMeUp = ""
@@ -29,7 +29,7 @@ function addExcitement (theWordArray) {
 
         if (i > 1 && i % 3 === 0) {
             buildMeUp += `${theWordArray[i]}`;
-            buildMeUp += `!`.repeat(i /3);
+            buildMeUp += (`${punct}`).repeat(i /3);
         }  else {
         // Concatenate the new word onto buildMeUp
             buildMeUp += `${theWordArray[i]} `;
@@ -41,7 +41,7 @@ function addExcitement (theWordArray) {
 }
 
 // Invoke the function and pass in the array
-addExcitement(sentence);   
-
+addExcitement(sentence, `!`);   
+addedExcitement(sentence, `?`);
 
 
