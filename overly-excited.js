@@ -19,14 +19,15 @@ let sentence = ["The","walrus","danced","through","the","trees","in","the","ligh
     the array as the sole argument. It should iterate over the array
     and output the words to the browser console.
 */
-
+// Two arguments that take an array and a string [ex. !, &, etc.]
 function addExcitement (theWordArray, punct) {
 
     // Each time the for loop executes, you're going to add one more word to this string
     let buildMeUp = ""
-
+    // for loop to count through array index
     for (let i = 0; i < theWordArray.length; i++) {
-
+        // i greater than 1 so that first index word isn't logged.
+        // i divisible by 3 to specify where a symbol would be placed in a sentence
         if (i > 1 && i % 3 === 0) {
             buildMeUp += `${theWordArray[i]}`;
             buildMeUp += (`${punct}`).repeat(i /3);
