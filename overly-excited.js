@@ -46,3 +46,13 @@ addExcitement(sentence, `!`);
 addedExcitement(sentence, `?`);
 
 
+/*
+
+Now you should define another variable that will hold an array of different words than your existing sentence. Perhaps name the variable betterSentence, or nextSentence.
+
+*/
+
+let mySentence = "This is a test sentence for checking out the split method.";
+let myArraySentence = mySentence.split(` `);
+//console.log(myArraySentence);
+addExcitement(myArraySentence, "&");
